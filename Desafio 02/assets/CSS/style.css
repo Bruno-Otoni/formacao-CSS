@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    margin: 15px auto -12px auto;
+}
+
+.main {
+    display: flex;
+}
+
+.avatar {
+    border-radius: 50%;
+    max-width: 34px;
+    max-height: 34px;
+    position: relative;
+    left: 49.5%;
+    top: .1rem;
+}
+
+.menu {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: .2rem;
+    left: 24px;
+    padding: 6px 3px 6px 3px;
+    gap: 0px;
+}
+
+.logo {
+    width: 90px;
+    height: 20px;
+    position: relative;
+    top: .7rem;
+    left: 80px;
+    gap: 0px;
+}
+
+.search {
+    width: 404px;
+    height: 40px;
+    position: relative;
+    left: 300px;
+    gap: 0px;
+    border: 1px 0px 0px 0px #cccccc;
+}
+
+.cam {
+    width: 24px;
+    height: 24px;
+    padding: 5px 1px 5px 1px;
+    position: relative;
+    left: 48%;
+    top: .2rem;
+}
+
+.bell {
+    width: 24px;
+    height: 24px;
+    padding: 2px 3px 2px 3px;
+    position: relative;
+    left: 49%;
+    top: 0.4rem;
+}
+
+.layout {
+    width: Hug (850px)px;
+    height: Hug (667px)px;
+    margin: 3rem;
+    top: 84px;
+    left: 75px;
+    gap: 16px;
+}
+
+.sidebar {
+    width: Hug (160px)px;
+    height: Hug (938px)px;
+    top: 84px;
+    left: 1052px;
+    gap: 16px;
+}
+
+.info {
+    width: 180px;
+    height: 90px;
+    left: 176px;
+    gap: 0px;
+    margin: 24px 0px;
+}
+
+.title {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.41px;
+    text-align: left;
+    margin: 0px 0px 3px 0px;
+}
+
+.content {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+    margin: 5px 0 0 0;
+}
+
+#central {
+    width: 850px;
+    height: auto;
+}
+
+#contain {
+    width: 850px;
+}
+
+#img {
+    width: 160px;
+    height: 90px;
+    margin: 10px 0;
+}

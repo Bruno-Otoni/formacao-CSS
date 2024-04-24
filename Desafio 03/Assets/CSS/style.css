@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+   height: 100vh;
+   display: grid;
+   background: #e8e8e8;
+  
+   grid-template: 
+   "header header header header" 1fr
+   "sidebar main main main" 3fr
+   "sidebar main main main" 3fr
+   "sidebar footer footer footer" 1fr
+   / 200px 1fr 1fr 1fr;
+   
+   gap: 2px;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    margin: 15px 0 0 0;
+}
+
+aside {
+    grid-area: sidebar;
+    margin-top: 20px;
+}
+
+aside figure {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 15px;
+}
+
+aside figure figcaption {
+    margin: 10px 0 0 10px;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 0 0 20px
+}
+
+main figure {
+    margin: 0;
+}
+
+main figure img {
+    width: 250px;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.avatar {
+    border-radius: 50%;
+    max-width: 34px;
+    max-height: 34px;
+    position: relative;
+    left: 49.5%;
+    top: .1rem;
+}
+
+.menu {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: .2rem;
+    left: 24px;
+    padding: 6px 3px 6px 3px;
+    gap: 0px;
+}
+
+.logo {
+    width: 90px;
+    height: 20px;
+    position: relative;
+    top: .7rem;
+    left: 80px;
+    gap: 0px;
+}
+
+.search {
+    width: 404px;
+    height: 40px;
+    position: relative;
+    left: 300px;
+    gap: 0px;
+    border: 1px 0px 0px 0px #cccccc;
+}
+
+.cam {
+    width: 24px;
+    height: 24px;
+    padding: 5px 1px 5px 1px;
+    position: relative;
+    left: 48%;
+    top: .2rem;
+}
+
+.bell {
+    width: 24px;
+    height: 24px;
+    padding: 2px 3px 2px 3px;
+    position: relative;
+    left: 49%;
+    top: 0.4rem;
+}

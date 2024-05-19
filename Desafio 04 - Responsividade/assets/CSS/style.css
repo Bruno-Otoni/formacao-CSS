@@ -9,8 +9,9 @@ header {
     height: 460px;
     background-image: url(../Imagens/Header\ Background.png);
     background-size: cover;
-    text-align: center;
-   
+    text-align: -webkit-center;
+    align-content: center;
+    place-items: center;
 }
 
 header h1 {
@@ -18,17 +19,38 @@ header h1 {
 }
 
 header p {
-    color:#fff;
+    color: #fff;
+    max-width: 400px;
+    align-self: center;
+}
+
+#button {
+    border-radius: 28px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+#button-2 {
+    border-radius: 28px;
+    padding: 8px;
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
 }
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     gap: 12px;
+    margin: 5px;
+}
+
+section {
+    max-width: 400px;
 }
 
 img {
-    max-width: 100%;
+    max-width: 330px;
 }
 
 footer {
@@ -39,16 +61,66 @@ footer {
 }
 
 @media screen and (min-width: 720px) {
-    main{
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 24px;
-        margin: 16px auto;
+    main {
+        display: grid;
+
+        grid-template:
+            "figure-1 content-1" 1fr
+            "content-2 figure-2" 1fr
+            "content-3 figure-3" 1fr
+            "content-4 content-4" 200px
+            "figure-4 figure-4" 1fr
+            /600px 600px;
+
+        gap: 1px;
+        text-align: center;
+        place-items: center;
+        margin: 15px;
     }
 
-    main section {
-        flex-basis: 300px;
-        flex: 2;
+    img {
+        max-width: 500px;
     }
-    
+
+    #figure-1 {
+        grid-area: figure-1;
+    }
+
+    #figure-2 {
+        grid-area: figure-2;
+    }
+
+    #figure-3 {
+        grid-area: figure-3;
+    }
+
+    #figure-4 {
+        grid-area: figure-4;
+    }
+
+    #content-1 {
+        grid-area: content-1;
+        align-content: center;
+    }
+
+    #content-2 {
+        grid-area: content-2;
+        align-content: center;
+    }
+
+    #content-3 {
+        grid-area: content-3;
+        align-content: center;
+    }
+
+    #content-4 {
+        grid-area: content-4;
+        align-content: center;
+        max-width: 500px;
+    }
+
+    header p {
+        max-width: 550px;
+    }
+
 }
